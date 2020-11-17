@@ -1,0 +1,7 @@
+<FilesMatch "\.(html|htm|rtf|rtx|svg|svgz|txt|xsd|xsl|xml|HTML|HTM|RTF|RTX|SVG|SVGZ|TXT|XSD|XSL|XML)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Cache-Control "no-cache"
+        Header unset Last-Modified
+    </IfModule>
+</FilesMatch>
