@@ -1,0 +1,36 @@
+i span{
+	color:black;
+        background-color:white ;
+}
+
+
+ion-icon {
+    color:white;
+    font-size: 35px;
+    padding-top: 2rem;
+    padding-right: 0.8rem;
+    text-align: center;
+     
+ }
+
+
+ion-icon:hover {
+    color:blue;
+ }
+
+ #botonWhatsapp:hover{
+    color:#4dc247;
+ }
+  #botonInstagram:hover{
+    color:#125688;
+  }
+  #botonYoutube:hover{
+    color:#bb0000;
+  }
+  #botonFacebook:hover{
+    color: #3b5998;
+  }
+ #botonCarrito:hover{
+    color:#FFF159;
+ }
+
