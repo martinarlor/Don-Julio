@@ -17,11 +17,6 @@
    
   <meta http-equiv="Pragma" content="no-cache">
 
-  <script
-    type="module"
-    src="https://unpkg.com/@webpunk/circular-text/dist-web/index.bundled.js">
-</script>
-
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,14 +36,37 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/avatar.png">
+<style>
+.center{
+  display: grid;
+  place-items: center;
+}
+#circle span{
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 140px;
+  width: 20px;
+  text-align: center;
+  transform-origin:bottom center ;
+}
+</style>
 
 </head>
 <body>
 
-  <div ><circular-text
-    text="FREE SHIPPING · FREE SHIPPING · "
-    radius="90">
-</circular-text></div>
+  <div class="center">
+      <h1 id="circle">IMPRESION 3D - DISEÑOS A MEDIDA - DECORACION </h1>
+  </div>
+  <script>
+    circle= document.getElementById("circle")
+    circlearray=circle.textContent.split('')
+    circle.textContent = ''
+
+    for (var i=0 ; i< circlearray.lenght; i++){
+      circle.innerHTML += '<span style="transform:rotate('+(i+10)+'deg)">' + circlearray[i]+'</span>'
+
+    }
+  </script>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
